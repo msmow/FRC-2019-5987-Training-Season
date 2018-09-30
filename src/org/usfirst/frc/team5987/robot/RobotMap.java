@@ -14,13 +14,72 @@ package org.usfirst.frc.team5987.robot;
  * floating around.
  */
 public class RobotMap {
-	// For example to map the left and right motors, you could define the
-	// following variables to use with your drivetrain subsystem.
-	// public static int leftMotor = 1;
-	// public static int rightMotor = 2;
 
-	// If you are using multiple modules, make sure to define both the port
-	// number and the module. For example you with a rangefinder:
-	// public static int rangefinderPort = 1;
-	// public static int rangefinderModule = 1;
+
+	/*done---------------CLIMB-----------------*/
+
+	
+	public static int climbMotor1 = 10;
+	public static int climbMotor2 = 9;
+	public static int climb1PDP = 12;
+	public static int climb2PDP = 13;
+	
+	public static final int[] climbPDPs = new int[] {climb1PDP, climb2PDP}; // TODO: CHANGE!
+	/*-------------------------------------*/
+
+
+
+	/*done----------------DRIVE----------------*/
+	public static final int driveRightRearMotor = 8; // TODO: CHANGE!
+	public static final int driveRightFrontMotor = 9; // TODO: CHANGE!
+	public static final int driveLeftRearMotor = 6; // TODO: CHANGE!
+	public static final int driveLeftFrontMotor = 7; // TODO: CHANGE!
+	/*-------------------------------------*/
+
+	/*done---------------GRIPPER---------------*/
+	public static int gripperWheelLeft = 2; // TODO: CHANGE!
+	public static int gripperLeftPDP = 6; // TODO: CHANGE!
+	public static int gripperWheelRight = 3; // TODO: CHANGE!
+	public static int gripperRightPDP = 5; // TODO: CHANGE!
+	
+	public static final int[] gripperPDPs = new int[] {gripperLeftPDP, gripperRightPDP};
+	/*-------------------------------------*/
+
+	/*done----------------LIFT-----------------*/
+
+	public static int liftMotorPort = 2;
+
+	/*-------------------------------------*/
+
+	/*done----------------INTAKE---------------*/
+	public static final int intakeMotorLeft = 4;
+	public static int intakeLeftPDP = 4;
+	public static final int intakeMotorRight = 5;
+	public static int intakeRightPDP = 11;
+	
+	public static final int[] intakePDPs = new int[] {intakeLeftPDP, intakeRightPDP};
+	/*-------------------------------------*/
+
+	/*-----------------------------------SENSORS----------------------------------*/
+
+	/*done----------------DRIVE----------------*/
+
+	public static final int driveRightEncoderChannelA = 2; // TODO: CHANGE!
+	public static final int driveRightEncoderChannelB = 3; // TODO: CHANGE!
+	public static final int driveLeftEncoderChannelA = 0; // TODO: CHANGE!
+	public static final int driveLeftEncoderChannelB = 1; // TODO: CHANGE!
+	/*-------------------------------------*/
+
+	/*done---------------GRIPPER---------------*/
+	public static int proximityChannel = 0; // TODO: CHANGE!
+	/*-------------------------------------*/
+	
+	/*done----------------INTAKE---------------*/
+	public static final int intakeSolenoid1 = 0;
+	public static final int intakeSolenoid2 = 1;
+	// Solenoid for controlling the spring pistons.
+	public static final int intakeSolenoid3 = 2;
+	public static final int intakeSolenoid4 = 3;
+	/*-------------------------------------*/
+	
 }
